@@ -1,2 +1,0 @@
-# NetChat
-TCP Chat Application
