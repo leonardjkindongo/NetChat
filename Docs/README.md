@@ -16,6 +16,7 @@ A simple multithreaded chat application using Python sockets.
 - Python threading
 
 ## How to Run
-### 1. Start the Server
-```bash
-python server/server.py
+
+1. python run_server.py
+2. python run_client.py
+3. Open multiple terminals for multiple clients to see communication in action!!
