@@ -9,7 +9,7 @@ def main():
     Connects to server, starts send/receive threads.
     """
     # -----------------------------
-    # 1️⃣ Create TCP client socket
+    # Create TCP client socket
     # -----------------------------
     # AF_INET = IPv4, SOCK_STREAM = TCP
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -22,7 +22,7 @@ def main():
         return  # Exit if connection fails
 
     # -----------------------------
-    # 2️⃣ Get username from user
+    # Get username from user
     # -----------------------------
     username = input("Enter your username: ")
 
@@ -30,7 +30,7 @@ def main():
     display_instructions()
 
     # -----------------------------
-    # 3️⃣ Define message receiving thread
+    # Define message receiving thread
     # -----------------------------
     def receive_messages():
         """
@@ -55,7 +55,7 @@ def main():
                 break
 
     # -----------------------------
-    # 4️⃣ Define message sending thread
+    # Define message sending thread
     # -----------------------------
     def send_messages():
         """
@@ -75,7 +75,7 @@ def main():
                 break
 
     # -----------------------------
-    # 5️⃣ Start threads for send/receive
+    # Start threads for send/receive
     # -----------------------------
     # Thread for receiving messages
     receive_thread = threading.Thread(target=receive_messages)
