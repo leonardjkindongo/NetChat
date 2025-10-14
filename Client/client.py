@@ -1,7 +1,7 @@
 import socket
 import threading
-from client.config import HOST, PORT, BUFFER_SIZE, ENCODING  # Import configuration
-from client.utils import display_instructions  # Import helper function to show instructions
+from Client.config import HOST, PORT, BUFFER_SIZE, ENCODING  # Import configuration
+from Client.utils import display_instructions  # Import helper function to show instructions
 
 def main():
     """
